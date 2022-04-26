@@ -29,12 +29,12 @@ public class main {
                 Path path = (Path) watchEvent.get().context();
 
                 FileReader reader = new FileReader();
-                reader.filePath = Paths.get("C://Users//SouthSystem//Desktop//DeveloperTest//data//in//" + path);
+                reader.filePath = Paths.get("C://Home//data//in//" + path);
                 reader.data = reader.readFile(reader.filePath);
 
                 String newFileName = path.toString().replace(".dat",".done.dat");
                 FileWritter writter = new FileWritter();
-                writter.newFilePath = "C://Users//SouthSystem//Desktop//DeveloperTest//data//out//flat_file_" + newFileName;
+                writter.newFilePath = "C://Home//data//out//flat_file_" + newFileName;
 
                 String s;
                 List<Salesman> salesmanList = new ArrayList<Salesman>();
